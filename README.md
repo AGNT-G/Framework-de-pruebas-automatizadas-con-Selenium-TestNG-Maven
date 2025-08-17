@@ -30,6 +30,7 @@ The TestNG panel in your IDE, or
 Command line:
 ```bash
 mvn clean test
+```
 
 ## Notes
 
