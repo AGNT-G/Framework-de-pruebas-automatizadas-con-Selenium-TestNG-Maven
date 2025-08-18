@@ -20,7 +20,7 @@ The goal is to practice building automation frameworks following industry best p
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AGNT-G/REPO-NAME.git
+   https://github.com/AGNT-G/Framework-de-pruebas-automatizadas-con-Selenium-TestNG-Maven.git
 ## Import the project into IntelliJ IDEA (or your preferred IDE).
 
 ## Run the tests using:
