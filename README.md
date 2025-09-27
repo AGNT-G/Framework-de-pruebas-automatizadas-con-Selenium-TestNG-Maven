@@ -24,13 +24,31 @@ The goal is to practice building automation frameworks following industry best p
 ## Import the project into IntelliJ IDEA (or your preferred IDE).
 
 ## Run the tests using:
+1. Open IntelliJ IDEA.  
+2. On the right side panel, locate the **Maven** tab.  
+3. Navigate to:  Lifecycle > test
+4. Double-click `test` to run all tests.
 
-The TestNG panel in your IDE, or
-
-Command line:
+## Run a Specific Test Class
 ```bash
-mvn clean test
+mvn -Dtest=LoginTest test
 ```
+## Troubleshooting
+
+Page Loads Too Slow
+The demo website may respond very slowly. If the site doesn’t load, tests may fail due to timeout errors.
+✔️ Solution: Retry later or increase the WebDriverWait timeout.
+
+Maven Not Found
+Make sure Maven is installed and added to the system PATH.
+Check with:
+```bash
+mvn -v
+```
+
+## Dependencies Not Downloaded
+In IntelliJ, go to the Maven tab → Click Reload All Maven Projects.
+
 
 ## Notes
 
@@ -39,3 +57,9 @@ Make sure you have Java 17 and Maven installed.
 Update the testng.xml file if you want to include/exclude specific test suites.
 
 Excel files used for data-driven testing are located in src/test/resources.
+
+The execution speed depends on the demo website’s availability.
+
+Tests may fail if the website is down or unresponsive.
+
+For consistency, it is recommended to use Google Chrome as the browser.
